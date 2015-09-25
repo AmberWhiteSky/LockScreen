@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C4B2F721BB5991F003EE1EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B2F711BB5991F003EE1EC /* main.m */; };
+		3C4B2F751BB5991F003EE1EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B2F741BB5991F003EE1EC /* AppDelegate.m */; };
+		3C4B2F781BB5991F003EE1EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B2F771BB5991F003EE1EC /* ViewController.m */; };
+		3C4B2F7B1BB5991F003EE1EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C4B2F791BB5991F003EE1EC /* Main.storyboard */; };
+		3C4B2F7D1BB5991F003EE1EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C4B2F7C1BB5991F003EE1EC /* Assets.xcassets */; };
+		3C4B2F801BB5991F003EE1EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C4B2F7E1BB5991F003EE1EC /* LaunchScreen.storyboard */; };
+		3C4B2F8B1BB5991F003EE1EC /* ____LockScreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B2F8A1BB5991F003EE1EC /* ____LockScreenTests.m */; };
+		3C4B2F961BB5991F003EE1EC /* ____LockScreenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B2F951BB5991F003EE1EC /* ____LockScreenUITests.m */; };
+		3C4B2FA51BB599F1003EE1EC /* MyLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B2FA41BB599F1003EE1EC /* MyLockView.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C4B2F871BB5991F003EE1EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C4B2F651BB5991F003EE1EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C4B2F6C1BB5991F003EE1EC;
+			remoteInfo = "收拾解锁LockScreen";
+		};
+		3C4B2F921BB5991F003EE1EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C4B2F651BB5991F003EE1EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C4B2F6C1BB5991F003EE1EC;
+			remoteInfo = "收拾解锁LockScreen";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C4B2F6D1BB5991F003EE1EC /* 收拾解锁LockScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "收拾解锁LockScreen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4B2F711BB5991F003EE1EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C4B2F731BB5991F003EE1EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3C4B2F741BB5991F003EE1EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3C4B2F761BB5991F003EE1EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3C4B2F771BB5991F003EE1EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3C4B2F7A1BB5991F003EE1EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C4B2F7C1BB5991F003EE1EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C4B2F7F1BB5991F003EE1EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C4B2F811BB5991F003EE1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C4B2F861BB5991F003EE1EC /* 收拾解锁LockScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "收拾解锁LockScreenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4B2F8A1BB5991F003EE1EC /* ____LockScreenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____LockScreenTests.m"; sourceTree = "<group>"; };
+		3C4B2F8C1BB5991F003EE1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C4B2F911BB5991F003EE1EC /* 收拾解锁LockScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "收拾解锁LockScreenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4B2F951BB5991F003EE1EC /* ____LockScreenUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____LockScreenUITests.m"; sourceTree = "<group>"; };
+		3C4B2F971BB5991F003EE1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C4B2FA31BB599F1003EE1EC /* MyLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLockView.h; sourceTree = "<group>"; };
+		3C4B2FA41BB599F1003EE1EC /* MyLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLockView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C4B2F6A1BB5991F003EE1EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4B2F831BB5991F003EE1EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4B2F8E1BB5991F003EE1EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C4B2F641BB5991F003EE1EC = {
+			isa = PBXGroup;
+			children = (
+				3C4B2F6F1BB5991F003EE1EC /* 收拾解锁LockScreen */,
+				3C4B2F891BB5991F003EE1EC /* 收拾解锁LockScreenTests */,
+				3C4B2F941BB5991F003EE1EC /* 收拾解锁LockScreenUITests */,
+				3C4B2F6E1BB5991F003EE1EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C4B2F6E1BB5991F003EE1EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C4B2F6D1BB5991F003EE1EC /* 收拾解锁LockScreen.app */,
+				3C4B2F861BB5991F003EE1EC /* 收拾解锁LockScreenTests.xctest */,
+				3C4B2F911BB5991F003EE1EC /* 收拾解锁LockScreenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C4B2F6F1BB5991F003EE1EC /* 收拾解锁LockScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3C4B2F731BB5991F003EE1EC /* AppDelegate.h */,
+				3C4B2F741BB5991F003EE1EC /* AppDelegate.m */,
+				3C4B2F761BB5991F003EE1EC /* ViewController.h */,
+				3C4B2F771BB5991F003EE1EC /* ViewController.m */,
+				3C4B2F791BB5991F003EE1EC /* Main.storyboard */,
+				3C4B2F7C1BB5991F003EE1EC /* Assets.xcassets */,
+				3C4B2F7E1BB5991F003EE1EC /* LaunchScreen.storyboard */,
+				3C4B2F811BB5991F003EE1EC /* Info.plist */,
+				3C4B2F701BB5991F003EE1EC /* Supporting Files */,
+				3C4B2FA31BB599F1003EE1EC /* MyLockView.h */,
+				3C4B2FA41BB599F1003EE1EC /* MyLockView.m */,
+			);
+			path = "收拾解锁LockScreen";
+			sourceTree = "<group>";
+		};
+		3C4B2F701BB5991F003EE1EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C4B2F711BB5991F003EE1EC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C4B2F891BB5991F003EE1EC /* 收拾解锁LockScreenTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C4B2F8A1BB5991F003EE1EC /* ____LockScreenTests.m */,
+				3C4B2F8C1BB5991F003EE1EC /* Info.plist */,
+			);
+			path = "收拾解锁LockScreenTests";
+			sourceTree = "<group>";
+		};
+		3C4B2F941BB5991F003EE1EC /* 收拾解锁LockScreenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C4B2F951BB5991F003EE1EC /* ____LockScreenUITests.m */,
+				3C4B2F971BB5991F003EE1EC /* Info.plist */,
+			);
+			path = "收拾解锁LockScreenUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C4B2F6C1BB5991F003EE1EC /* 收拾解锁LockScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4B2F9A1BB5991F003EE1EC /* Build configuration list for PBXNativeTarget "收拾解锁LockScreen" */;
+			buildPhases = (
+				3C4B2F691BB5991F003EE1EC /* Sources */,
+				3C4B2F6A1BB5991F003EE1EC /* Frameworks */,
+				3C4B2F6B1BB5991F003EE1EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "收拾解锁LockScreen";
+			productName = "收拾解锁LockScreen";
+			productReference = 3C4B2F6D1BB5991F003EE1EC /* 收拾解锁LockScreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C4B2F851BB5991F003EE1EC /* 收拾解锁LockScreenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4B2F9D1BB5991F003EE1EC /* Build configuration list for PBXNativeTarget "收拾解锁LockScreenTests" */;
+			buildPhases = (
+				3C4B2F821BB5991F003EE1EC /* Sources */,
+				3C4B2F831BB5991F003EE1EC /* Frameworks */,
+				3C4B2F841BB5991F003EE1EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C4B2F881BB5991F003EE1EC /* PBXTargetDependency */,
+			);
+			name = "收拾解锁LockScreenTests";
+			productName = "收拾解锁LockScreenTests";
+			productReference = 3C4B2F861BB5991F003EE1EC /* 收拾解锁LockScreenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C4B2F901BB5991F003EE1EC /* 收拾解锁LockScreenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4B2FA01BB5991F003EE1EC /* Build configuration list for PBXNativeTarget "收拾解锁LockScreenUITests" */;
+			buildPhases = (
+				3C4B2F8D1BB5991F003EE1EC /* Sources */,
+				3C4B2F8E1BB5991F003EE1EC /* Frameworks */,
+				3C4B2F8F1BB5991F003EE1EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C4B2F931BB5991F003EE1EC /* PBXTargetDependency */,
+			);
+			name = "收拾解锁LockScreenUITests";
+			productName = "收拾解锁LockScreenUITests";
+			productReference = 3C4B2F911BB5991F003EE1EC /* 收拾解锁LockScreenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C4B2F651BB5991F003EE1EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = AmberWhiteSky;
+				TargetAttributes = {
+					3C4B2F6C1BB5991F003EE1EC = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 8RPK9DE62C;
+					};
+					3C4B2F851BB5991F003EE1EC = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 8RPK9DE62C;
+						TestTargetID = 3C4B2F6C1BB5991F003EE1EC;
+					};
+					3C4B2F901BB5991F003EE1EC = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 8RPK9DE62C;
+						TestTargetID = 3C4B2F6C1BB5991F003EE1EC;
+					};
+				};
+			};
+			buildConfigurationList = 3C4B2F681BB5991F003EE1EC /* Build configuration list for PBXProject "收拾解锁LockScreen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C4B2F641BB5991F003EE1EC;
+			productRefGroup = 3C4B2F6E1BB5991F003EE1EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C4B2F6C1BB5991F003EE1EC /* 收拾解锁LockScreen */,
+				3C4B2F851BB5991F003EE1EC /* 收拾解锁LockScreenTests */,
+				3C4B2F901BB5991F003EE1EC /* 收拾解锁LockScreenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C4B2F6B1BB5991F003EE1EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4B2F801BB5991F003EE1EC /* LaunchScreen.storyboard in Resources */,
+				3C4B2F7D1BB5991F003EE1EC /* Assets.xcassets in Resources */,
+				3C4B2F7B1BB5991F003EE1EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4B2F841BB5991F003EE1EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4B2F8F1BB5991F003EE1EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C4B2F691BB5991F003EE1EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4B2F781BB5991F003EE1EC /* ViewController.m in Sources */,
+				3C4B2FA51BB599F1003EE1EC /* MyLockView.m in Sources */,
+				3C4B2F751BB5991F003EE1EC /* AppDelegate.m in Sources */,
+				3C4B2F721BB5991F003EE1EC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4B2F821BB5991F003EE1EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4B2F8B1BB5991F003EE1EC /* ____LockScreenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4B2F8D1BB5991F003EE1EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4B2F961BB5991F003EE1EC /* ____LockScreenUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C4B2F881BB5991F003EE1EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C4B2F6C1BB5991F003EE1EC /* 收拾解锁LockScreen */;
+			targetProxy = 3C4B2F871BB5991F003EE1EC /* PBXContainerItemProxy */;
+		};
+		3C4B2F931BB5991F003EE1EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C4B2F6C1BB5991F003EE1EC /* 收拾解锁LockScreen */;
+			targetProxy = 3C4B2F921BB5991F003EE1EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C4B2F791BB5991F003EE1EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C4B2F7A1BB5991F003EE1EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C4B2F7E1BB5991F003EE1EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C4B2F7F1BB5991F003EE1EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C4B2F981BB5991F003EE1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3C4B2F991BB5991F003EE1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C4B2F9B1BB5991F003EE1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "收拾解锁LockScreen/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amberwhitesky-163.com.----LockScreen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3C4B2F9C1BB5991F003EE1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "收拾解锁LockScreen/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amberwhitesky-163.com.----LockScreen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3C4B2F9E1BB5991F003EE1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "收拾解锁LockScreenTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amberwhitesky-163.com.----LockScreenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/收拾解锁LockScreen.app/收拾解锁LockScreen";
+			};
+			name = Debug;
+		};
+		3C4B2F9F1BB5991F003EE1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "收拾解锁LockScreenTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amberwhitesky-163.com.----LockScreenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/收拾解锁LockScreen.app/收拾解锁LockScreen";
+			};
+			name = Release;
+		};
+		3C4B2FA11BB5991F003EE1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "收拾解锁LockScreenUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amberwhitesky-163.com.----LockScreenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "收拾解锁LockScreen";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3C4B2FA21BB5991F003EE1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "收拾解锁LockScreenUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amberwhitesky-163.com.----LockScreenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "收拾解锁LockScreen";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C4B2F681BB5991F003EE1EC /* Build configuration list for PBXProject "收拾解锁LockScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4B2F981BB5991F003EE1EC /* Debug */,
+				3C4B2F991BB5991F003EE1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C4B2F9A1BB5991F003EE1EC /* Build configuration list for PBXNativeTarget "收拾解锁LockScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4B2F9B1BB5991F003EE1EC /* Debug */,
+				3C4B2F9C1BB5991F003EE1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3C4B2F9D1BB5991F003EE1EC /* Build configuration list for PBXNativeTarget "收拾解锁LockScreenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4B2F9E1BB5991F003EE1EC /* Debug */,
+				3C4B2F9F1BB5991F003EE1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3C4B2FA01BB5991F003EE1EC /* Build configuration list for PBXNativeTarget "收拾解锁LockScreenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4B2FA11BB5991F003EE1EC /* Debug */,
+				3C4B2FA21BB5991F003EE1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C4B2F651BB5991F003EE1EC /* Project object */;
+}
