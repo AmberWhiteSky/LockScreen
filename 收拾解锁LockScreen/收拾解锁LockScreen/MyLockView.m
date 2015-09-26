@@ -45,10 +45,10 @@
         UIButton  *but =[UIButton  buttonWithType:UIButtonTypeCustom];
         
         //2.设置默认图片
-        [but setBackgroundImage:[UIImage  imageNamed:@""] forState:UIControlStateNormal];
+        [but setBackgroundImage:[UIImage  imageNamed:@"normal"] forState:UIControlStateNormal];
         
         //设置按钮选中时候的图片
-        [but setBackgroundImage:[UIImage  imageNamed:@""] forState:UIControlStateSelected];
+        [but setBackgroundImage:[UIImage  imageNamed:@"light"] forState:UIControlStateSelected];
         
         
         //3.添加按钮
@@ -67,14 +67,19 @@
         UIButton  *but =self.subviews[index];
         
         //frame
-        CGFloat  butWidth =74;
-        CGFloat  butHeight =74;
+        CGFloat  butWidth =40;
+        CGFloat  butHeight =40;
+        
         int  totalCloums =3;
-        int  col =  index%totalCloums;
+        int  col =  index % totalCloums;
         int  row =index/totalCloums;
-//        CGFloat  butX=index%3;
-//        CGFloat  butY=;
-//        but.frame  =CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
+        
+        CGFloat marginX = (self.frame.size.width -totalCloums*butWidth)/(totalCloums +1);
+        CGFloat marginY = marginX;
+        
+        CGFloat  butX=marginX +col *(butWidth+marginX);
+        CGFloat  butY=row*(butHeight+marginY);
+        but.frame  =CGRectMake(butX, butY, butWidth, butHeight);
     }
 }
 
@@ -85,6 +90,32 @@
     
     
     
+}
+
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    
+}
+
+-(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch  *touch = [touches anyObject];
+    CGPoint  points =[touch locationInView:touch.view];
+    for (UIButton  *btn  in self.subviews) {
+        if (CGRectContainsPoint(btn.frame, points)) {
+            btn.selected = YES;
+        }
+    }
+    
+}
+
+-(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event  {
+
+}
+
+-(void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self  touchesEnded:touches withEvent:event];
+
 }
 
 
