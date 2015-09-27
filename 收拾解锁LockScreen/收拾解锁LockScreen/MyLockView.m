@@ -12,6 +12,7 @@
 @interface MyLockView ()
 
 @property(nonatomic  ,strong)  NSMutableArray *selectButtons;
+@property(nonatomic,assign)  CGPoint  currentMovePoint;
 
 @end
 
@@ -150,11 +151,14 @@
     //获得触摸的按钮
     UIButton  *btn =[self  buttonWithPoint:pos];
 #warning 一定要先判断数组为不为空 然后在设置状态 负责creash
-    if (btn  &&btn.selected==NO) {
+    if (btn  &&btn.selected==NO) {//摸到了按钮
         //设置状态
         btn.selected=YES;
         //把按钮添加到数组
         [self.selectButtons  addObject:btn];
+    }else {
+        self.currentMovePoint =pos;
+    
     }
     //刷新
     [self  setNeedsDisplay];
@@ -172,6 +176,8 @@
     [self.selectButtons removeAllObjects];
     //重绘
     [self setNeedsDisplay];
+    //清空
+    self.currentMovePoint =CGPointZero;
     
     
 }
@@ -199,9 +205,19 @@
             [path  addLineToPoint:but.center];
         }
     }
+    
+    //连接
+    
+    if (CGPointEqualToPoint(self.currentMovePoint, CGPointZero)==NO) {
+        [path  addLineToPoint:self.currentMovePoint];
+
+    }
+    
     //绘图
     //线的宽度
     path.lineWidth =10;
+    //折线的样式
+    path.lineJoinStyle =kCGLineJoinRound;
     //颜色
     [[UIColor  greenColor]set];
     //绘制路径
