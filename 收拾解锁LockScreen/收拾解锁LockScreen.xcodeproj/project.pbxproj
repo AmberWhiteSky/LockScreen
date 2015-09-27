@@ -16,6 +16,7 @@
 		3C4B2F8B1BB5991F003EE1EC /* ____LockScreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B2F8A1BB5991F003EE1EC /* ____LockScreenTests.m */; };
 		3C4B2F961BB5991F003EE1EC /* ____LockScreenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B2F951BB5991F003EE1EC /* ____LockScreenUITests.m */; };
 		3C4B2FA51BB599F1003EE1EC /* MyLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B2FA41BB599F1003EE1EC /* MyLockView.m */; settings = {ASSET_TAGS = (); }; };
+		3C8F34D51BB839CD0027DA17 /* AmCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F34D41BB839CD0027DA17 /* AmCircleView.m */; settings = {ASSET_TAGS = (); }; };
 		3C9541421BB6E7DA00D7128A /* light.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C95413D1BB6E7DA00D7128A /* light.png */; settings = {ASSET_TAGS = (); }; };
 		3C9541431BB6E7DA00D7128A /* gesture_node_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C95413E1BB6E7DA00D7128A /* gesture_node_highlighted@2x.png */; settings = {ASSET_TAGS = (); }; };
 		3C9541441BB6E7DA00D7128A /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C95413F1BB6E7DA00D7128A /* normal.png */; settings = {ASSET_TAGS = (); }; };
@@ -59,6 +60,8 @@
 		3C4B2F971BB5991F003EE1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C4B2FA31BB599F1003EE1EC /* MyLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLockView.h; sourceTree = "<group>"; };
 		3C4B2FA41BB599F1003EE1EC /* MyLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLockView.m; sourceTree = "<group>"; };
+		3C8F34D31BB839CD0027DA17 /* AmCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmCircleView.h; sourceTree = "<group>"; };
+		3C8F34D41BB839CD0027DA17 /* AmCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmCircleView.m; sourceTree = "<group>"; };
 		3C95413D1BB6E7DA00D7128A /* light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light.png; sourceTree = "<group>"; };
 		3C95413E1BB6E7DA00D7128A /* gesture_node_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_node_highlighted@2x.png"; sourceTree = "<group>"; };
 		3C95413F1BB6E7DA00D7128A /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				3C4B2F701BB5991F003EE1EC /* Supporting Files */,
 				3C4B2FA31BB599F1003EE1EC /* MyLockView.h */,
 				3C4B2FA41BB599F1003EE1EC /* MyLockView.m */,
+				3C8F34D31BB839CD0027DA17 /* AmCircleView.h */,
+				3C8F34D41BB839CD0027DA17 /* AmCircleView.m */,
 			);
 			path = "收拾解锁LockScreen";
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C4B2F781BB5991F003EE1EC /* ViewController.m in Sources */,
+				3C8F34D51BB839CD0027DA17 /* AmCircleView.m in Sources */,
 				3C4B2FA51BB599F1003EE1EC /* MyLockView.m in Sources */,
 				3C4B2F751BB5991F003EE1EC /* AppDelegate.m in Sources */,
 				3C4B2F721BB5991F003EE1EC /* main.m in Sources */,

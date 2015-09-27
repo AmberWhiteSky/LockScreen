@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "MyLockView.h"
 
-@interface ViewController ()
+@interface ViewController ()<MyLockViewDelegate>
 
 @end
 
@@ -18,6 +19,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+
+-(void)lockView:(MyLockView *)lockView didFinish:(NSString *)path {
+    
+    
+    NSLog(@"用户路径:%@",path);
+
+}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

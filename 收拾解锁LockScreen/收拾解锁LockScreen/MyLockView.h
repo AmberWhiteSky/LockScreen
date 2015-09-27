@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MyLockView;
+@protocol MyLockViewDelegate <NSObject>
+
+@optional
+-(void)  lockView:(MyLockView *)  lockView  didFinish:(NSString  *) path;
+@end
 
 @interface MyLockView : UIView
 
+@property(nonatomic,weak)  IBOutlet id<MyLockViewDelegate>  delegate;
 @end

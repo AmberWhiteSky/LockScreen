@@ -7,6 +7,7 @@
 //
 
 #import "MyLockView.h"
+#import "AmCircleView.h"
 
 
 @interface MyLockView ()
@@ -57,18 +58,9 @@
 -(void)  setUp{
     for (int  index=0; index<9; index++) {
         //1.创建按钮
-        UIButton  *but =[UIButton  buttonWithType:UIButtonTypeCustom];
+        AmCircleView  *but =[AmCircleView  buttonWithType:UIButtonTypeCustom];
         
-        //设置按钮不可用
-        but.userInteractionEnabled =NO;
-        //设置按钮背景色
-        //2.设置默认图片
-        [but setBackgroundImage:[UIImage  imageNamed:@"normal"] forState:UIControlStateNormal];
-        
-        //设置按钮选中时候的图片
-        [but setBackgroundImage:[UIImage  imageNamed:@"light"] forState:UIControlStateSelected];
-        
-        
+              
         //3.添加按钮
         [self addSubview:but];
     }
@@ -82,7 +74,7 @@
         
         //取出按钮
         
-        UIButton  *but =self.subviews[index];
+        AmCircleView  *but =self.subviews[index];
         
         //frame
         CGFloat  butWidth =40;
@@ -116,9 +108,14 @@
 
 
 //根据触摸点获得对应的按钮
--(UIButton  *) buttonWithPoint :(CGPoint)  point{
-    for (UIButton  *btn in  self.subviews ) {
-        if (CGRectContainsPoint(btn.frame, point)) {
+-(AmCircleView  *) buttonWithPoint :(CGPoint)  point{
+    for (AmCircleView  *btn in  self.subviews ) {
+        CGFloat  wh =24;
+        CGFloat  frameX =btn.center.x -wh*0.5;
+        CGFloat  frameY =btn.center.y -wh*0.5;
+
+        
+        if (CGRectContainsPoint(CGRectMake(frameX,frameY,wh,wh), point)) {
             return  btn;
         }
     }
@@ -128,10 +125,14 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
+    //清空当前触摸点
+    self.currentMovePoint =CGPointMake(-10, -10);
+
+    
     //获得触摸点
     CGPoint   pos =[self  pointWithTouches:touches];
     //获得触摸的按钮
-    UIButton  *btn =[self  buttonWithPoint:pos];
+    AmCircleView  *btn =[self  buttonWithPoint:pos];
     //设置状态
 #warning 一定要先判断数组为不为空 然后在设置状态 负责creash
     if (btn  &&btn.selected==NO) {
@@ -149,7 +150,7 @@
     //获得触摸点
     CGPoint   pos =[self  pointWithTouches:touches];
     //获得触摸的按钮
-    UIButton  *btn =[self  buttonWithPoint:pos];
+    AmCircleView  *btn =[self  buttonWithPoint:pos];
 #warning 一定要先判断数组为不为空 然后在设置状态 负责creash
     if (btn  &&btn.selected==NO) {//摸到了按钮
         //设置状态
@@ -165,9 +166,24 @@
 }
 
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event  {
+       //通知代理
+    if ([self.delegate  respondsToSelector:@selector(lockView:didFinish:)]) {
+        
+        
+        NSMutableString  *path =[NSMutableString  string];
+        for (AmCircleView  *btn in  self.selectButtons) {
+            [path  appendFormat:@"%d",btn.tag];
+        }
+        NSLog(@"用户的轨迹:%@",path);
+        [self.delegate lockView:self didFinish:path];
+        
+
+    }
+    
+
     
     //取消按钮所有选中效果
-//    for (UIButton *btn  in self.selectButtons) {
+//    for (AmCircleView *btn  in self.selectButtons) {
 //        btn.selected=NO;
 //    }
     [self.selectButtons  makeObjectsPerformSelector:@selector(setSelected:) withObject:@(NO)];
@@ -177,7 +193,7 @@
     //重绘
     [self setNeedsDisplay];
     //清空
-    self.currentMovePoint =CGPointZero;
+    self.currentMovePoint =CGPointMake(-10, -10);
     
     
 }
@@ -198,7 +214,7 @@
     
     //遍历所有的按钮
     for (int index =0; index<self.selectButtons.count; index++) {
-        UIButton  *but =self.selectButtons[index];
+        AmCircleView  *but =self.selectButtons[index];
         if (index==0) {
             [path  moveToPoint:but.center];
         }else {
@@ -208,7 +224,7 @@
     
     //连接
     
-    if (CGPointEqualToPoint(self.currentMovePoint, CGPointZero)==NO) {
+    if (CGPointEqualToPoint(self.currentMovePoint, CGPointMake(-10, -10))==NO) {
         [path  addLineToPoint:self.currentMovePoint];
 
     }
@@ -219,7 +235,8 @@
     //折线的样式
     path.lineJoinStyle =kCGLineJoinRound;
     //颜色
-    [[UIColor  greenColor]set];
+//    [[UIColor  greenColor]set];
+    [[UIColor  colorWithRed:32/25500 green:210/255.0 blue:254/255.0 alpha:0.5]set];
     //绘制路径
     [path stroke];
     
